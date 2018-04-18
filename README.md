@@ -41,7 +41,7 @@ Then you will have to install Geckodriver from [Geckodriver/releases](https://gi
 For Mac users, put it under usr/local/bin
 
 Then after installing the package using pip
-you can start to use it by typing infinite_image_downloader [keyword] [numbers of images you want] [download path](optional)
+you can start to use it by typing infinite_image_downloader [keyword] [numbers of images you want] [download path(optional)] 
 
 An example is shown below
 
