@@ -78,6 +78,7 @@ def main():
     # adding path to geckodriver to the OS environment variable
 	os.environ["PATH"] += os.pathsep + os.getcwd()
 
+	global download_path
 	if not len(sys.argv) >= 4:
 		download_path = "dataset/"
 	else:
@@ -85,11 +86,16 @@ def main():
         
 	print('Your download path is {}'.format(download_path))
     
+	global links
 	links = set()
+	global searched
 	searched = set()
     
+	global driver
 	driver = webdriver.Firefox()
+	global searchtext
 	searchtext = sys.argv[1]
+	global num_requested
 	num_requested = int(sys.argv[2])
     
                         
@@ -100,6 +106,7 @@ def main():
 	print('{} images found successfully'.format(len(links)))
 	print('Now start downloading:')
     
+	global downloaded_img_count, img_count
 	downloaded_img_count = 0
 	img_count = 0
 	download(downloaded_img_count,img_count)
