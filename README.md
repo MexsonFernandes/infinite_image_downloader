@@ -1,8 +1,10 @@
-Infinite_image_downloader
+[![PyPI version](https://badge.fury.io/py/infinite-image-downloader.svg)](https://badge.fury.io/py/infinite-image-downloader)
+
+Infinite-image-downloader
 =====
 _Developer: Zhiao Zhou ([@zhiaozhou](https://github.com/zhiaozhou) | <zz1749@nyu.edu> | [Linkedin](https://www.linkedin.com/in/zhiaozhou/))_ 
 
-Infinite_image-downloader is a python library for automatically downloading requested number of images from Google image search by one keyword.
+Infinite-image-downloader is a python library for automatically downloading requested number of images from Google image search by one keyword.
 
 The principle is that since Google has limited the number of outputs per keyword(1000 maximum), after getting numbers of pictures and their urls of the first search, the downloader is going to search more images using the urls that were just achieved and then recursively go on.
 
@@ -19,7 +21,7 @@ Installation
 =============
 Using pip:
 ```
-$ pip install infinite_image_downloader
+$ pip install infinite-image-downloader
 ```
 
 Or for installing the latest codebase:
