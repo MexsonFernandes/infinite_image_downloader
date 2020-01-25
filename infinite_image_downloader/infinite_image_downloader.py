@@ -50,7 +50,7 @@ def download(downloaded_img_count,img_count):
 		img_url = url
 		img_count += 1
 		img_type = url.split('.')[-1]
-		print "Downloading image", img_count, ": ", img_url
+		print("Downloading image", img_count, ": ", img_url)
 		extensions = ['png','jpg','gif']      
 		try:
 			if img_type not in extensions:
@@ -66,7 +66,7 @@ def download(downloaded_img_count,img_count):
 					print("There was some other socket error")
 			downloaded_img_count += 1
 		except Exception as e:
-			print "Download failed:", e
+			print("Download failed:", e)
 	print("Total downloaded: ", downloaded_img_count, "/", img_count)
 
 def main():
