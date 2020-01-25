@@ -7,6 +7,7 @@ import sys
 import time
 import request
 import socket
+from importlib import reload
 
     
 def get_links(searchtext):
