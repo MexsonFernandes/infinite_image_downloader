@@ -61,13 +61,13 @@ def download(downloaded_img_count,img_count):
 			except socket.error: 
 				errno, errstr = sys.exc_info()[:2] 
 				if errno == socket.timeout: 
-					print "There was a timeout" 
+					print("There was a timeout")
 				else: 
-					print "There was some other socket error"
+					print("There was some other socket error")
 			downloaded_img_count += 1
 		except Exception as e:
 			print "Download failed:", e
-	print "Total downloaded: ", downloaded_img_count, "/", img_count
+	print("Total downloaded: ", downloaded_img_count, "/", img_count)
 
 def main():
 	socket.setdefaulttimeout(30)
