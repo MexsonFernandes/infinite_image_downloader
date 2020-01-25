@@ -74,7 +74,7 @@ def main():
 	socket.setdefaulttimeout(30)
 
 	reload(sys)
-	sys.setdefaultencoding('utf8')
+	#sys.setdefaultencoding('utf8')
 
     # adding path to geckodriver to the OS environment variable
 	os.environ["PATH"] += os.pathsep + os.getcwd()
