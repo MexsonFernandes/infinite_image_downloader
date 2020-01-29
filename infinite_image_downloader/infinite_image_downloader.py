@@ -24,8 +24,8 @@ def get_links(searchtext):
 		headers['User-Agent'] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
 		extensions = {"jpg", "jpeg", "png", "gif"}
 
-		for _ in xrange(number_of_scrolls):
-			for __ in xrange(10):
+		for _ in range(number_of_scrolls):
+			for __ in range(10):
                 # multiple scrolls needed to show all 400 images
 				driver.execute_script("window.scrollBy(0, 1000000)")
 				time.sleep(0.2)
