@@ -57,7 +57,7 @@ def download(downloaded_img_count,img_count):
 			if img_type not in extensions:
 				img_type = "jpg"
 			try:
-				urllib.urlretrieve(img_url,download_path+'/'+searchtext.replace(" ", "_")+"/"+str(downloaded_img_count)+"."+img_type)
+				urllib.request.urlretrieve(img_url,download_path+'/'+searchtext.replace(" ", "_")+"/"+str(downloaded_img_count)+"."+img_type)
 				print('success')
 			except socket.error: 
 				errno, errstr = sys.exc_info()[:2] 
