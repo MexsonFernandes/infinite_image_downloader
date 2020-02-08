@@ -10,8 +10,7 @@ The principle is that since Google has limited the number of outputs per keyword
 
 Dependencies
 =============
-pgmpy has following non optional dependencies:
-- Python 2.7 or Python 3
+- Python 3
 - request 
 - selenium 
 - socket
